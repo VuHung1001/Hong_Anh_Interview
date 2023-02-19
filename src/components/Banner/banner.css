@@ -1,0 +1,35 @@
+.banner {
+    padding: 0px;
+    gap: 8px;
+    width: 100%;
+    height: 40px;
+}
+
+.banner .banner-container {
+    width: 100%;
+    height: 40px;
+    background: #dbdbf2;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.banner .banner-container span {
+    font-family: "Anek Latin";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #242533;
+}
+
+.banner-container .banner-span-1 {
+    margin-left: 70px;
+    padding: 0px;
+}
+.banner-container .banner-span-2 {
+    margin: 10px 10px;
+}
+.banner-container .banner-span-3 {
+    padding: 0px;
+}

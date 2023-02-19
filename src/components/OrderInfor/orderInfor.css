@@ -1,0 +1,109 @@
+.order_infor {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 24px;
+    height: fit-content;
+    background: #ffffff;
+    border: 1px solid #dbdbf2;
+    border-radius: 16px;
+}
+
+.order_infor-title {
+    font-family: "Anek Latin";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    color: #242533;
+}
+.order_infor-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.order_infor-receiver,
+.order_infor-sender,
+.order_infor-other {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+}
+
+.order_infor-line {
+    width: 100%;
+    height: 0px;
+    border: 0.5px solid #dbdbf2;
+}
+
+.order_infor-receiver > span,
+.order_infor-sender > span {
+    font-family: "Anek Latin";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #242533;
+}
+
+.order_infor-receiver-detail,
+.order_infor-sender-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+
+.order_infor-receiver-detail span,
+.order_infor-sender-detail span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #434657;
+}
+
+.order_infor-shipping_unit,
+.order_infor-payment_method {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 86px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.order_infor-shipping_unit-title,
+.order_infor-payment_method-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #656c78;
+}
+
+.order_infor-shipping_unit-name,
+.order_infor-payment_method-name {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #434657;
+}

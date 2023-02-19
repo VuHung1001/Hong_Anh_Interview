@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 16px;
+    color: #ffffff;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+
+.header-right button:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 4px;
+    background: #005eff;
+    border-radius: 8px;
+    color: inherit;
+    border: none;
+}
+
+.header-right button:last-child {
+    border: none;
+    background-color: inherit;
+}

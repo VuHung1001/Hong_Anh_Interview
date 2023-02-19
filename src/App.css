@@ -1,38 +1,226 @@
 .App {
-  text-align: center;
+    background: #f5f5fa;
+    padding: 17px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > h1 {
+    display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    transition: all ease 0.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+    cursor: pointer;
+    transition: all ease 0.5s;
+    transform: scale(1.05);
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 1024px) {
+    .order_content-container {
+        flex-direction: column;
+    }
+
+    .footer {
+        width: 95% !important;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 884px) {
+    .footer-right {
+        gap: 16px !important;
+    }
+
+    .footer-right-3 {
+        display: none;
+    }
+
+    .order_route-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px !important;
+    }
+
+    .order_route-id,
+    .order_route-address {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .order_route-address-from,
+    .order_route-address-to {
+        width: 45% !important;
+    }
+
+    .order_route-address-top {
+        width: 65% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .order_route-status {
+        flex-direction: row !important;
+        height: 364px;
+    }
+
+    .order_route-status-time,
+    .order_route-status-stage {
+        flex-direction: column !important;
+        height: 100% !important;
+    }
+
+    .order_route-status-block-time {
+        justify-content: center;
+    }
+
+    .order_route-status-stage {
+        justify-content: space-around !important;
+    }
+
+    .order_route-status-lines-bulbs,
+    .order_route-status-lines-bulbs div {
+        flex-direction: column !important;
+    }
+
+    .order_route-status-block-time,
+    .order_route-status-lines-bulbs div,
+    .order_route-status-block-stage {
+        height: calc(100% / 7) !important;
+    }
+
+    .order_route-status-lines-bulbs div:last-child {
+        height: 30px !important;
+    }
+
+    .order_route-status-line-blue,
+    .order_route-status-line-gray {
+        height: calc(100% - 30px) !important;
+        width: 0px !important;
+    }
+
+    .footer {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .order_detail-serial,
+    .order_detail-image,
+    .order_detail-id,
+    .order_detail-name,
+    .order_detail-class,
+    .order_detail-quantity {
+        padding: 5px !important;
+    }
+
+    .footer-small-qr {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .order_detail-table {
+        display: none;
+    }
+
+    .order_detail-mobile_screen {
+        display: block !important;
+    }
+
+    .order_detail-item > div {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .order_detail-item > div span:first-child,
+    .order_detail-item > div img:first-child,
+    .order_detail-item > div div:first-child {
+        width: 30%;
+        max-width: 30%;
+    }
+
+    .order_detail-class {
+        flex-direction: row !important;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .App {
+        padding: 20px !important;
+    }
+
+    .banner-span-1 {
+        margin-left: 10px !important;
+    }
+
+    .order_detail-item > div {
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    .order_detail-item > div span:first-child,
+    .order_detail-item > div img:first-child,
+    .order_detail-item > div div:first-child {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 432px) {
+    .App {
+        padding: 10px !important;
+    }
+
+    .order_detail-item > div span:first-child,
+    .order_detail-item > div img:first-child,
+    .order_detail-item > div div:first-child {
+        width: unset;
+        max-width: unset;
+    }
+
+    .banner,
+    .banner-container {
+        height: 80px !important;
+    }
+
+    .header-container {
+        padding: 0 5px !important;
+    }
+
+    .header-right button:first-child {
+        padding: 6px !important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .App > div {
+        display: none;
+    }
+
+    .App > h1 {
+        display: block;
+        font-family: "Inter";
+        font-weight: bold;
+        height: 200px;
+        width: 200px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: -150px;
+    }
+}
+
+.order_content-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    width: 100%;
 }

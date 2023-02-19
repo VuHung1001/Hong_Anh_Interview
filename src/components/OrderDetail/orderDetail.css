@@ -1,0 +1,134 @@
+.order_detail {
+    height: fit-content;
+    background: #ffffff;
+    border: 1px solid #dbdbf2;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 32px 32px 20px 32px;
+}
+
+.order_detail-table {
+    border: 1px solid #a1a1b2;
+    border-radius: 8px;
+}
+
+.order_detail-mobile_screen {
+    display: none;
+}
+
+.order_detail-table thead {
+    background: #f5f5fa;
+
+    border-bottom: 1px solid #dbdbf2;
+}
+
+.order_detail-table thead td,
+.order_detail-table thead tr {
+    border-bottom: 1px solid #dbdbf2;
+    background: #f5f5fa;
+}
+
+.order_detail-serial,
+.order_detail-image,
+.order_detail-id,
+.order_detail-name,
+.order_detail-class,
+.order_detail-quantity {
+    font-family: "Anek Latin";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #434657;
+    padding: 10px;
+}
+
+.order_detail-serial {
+    width: 10%;
+}
+
+.order_detail-image {
+    width: 15%;
+}
+
+.order_detail-id {
+    width: 20%;
+}
+
+.order_detail-name {
+    width: 25%;
+}
+
+.order_detail-class {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.order_detail-quantity {
+    width: 10%;
+}
+
+.order_detail-table tbody td {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #656c78;
+    border-bottom: 1px solid #f5f5fa;
+}
+
+.order_detail-table tbody tr:hover td {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2676ff;
+}
+
+.order_detail-header > span {
+    font-family: "Anek Latin";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    color: #242533;
+}
+
+.order_detail-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 36px;
+}
+
+.order_detail-total > span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #656c78;
+}
+
+.order_detail-total-result {
+    font-family: "Anek Latin";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #005eff;
+}
