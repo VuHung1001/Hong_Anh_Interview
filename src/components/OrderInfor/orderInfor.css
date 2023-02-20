@@ -9,6 +9,7 @@
     background: #ffffff;
     border: 1px solid #dbdbf2;
     border-radius: 16px;
+    max-width: 37.5%;
 }
 
 .order_infor-title {

@@ -22,9 +22,42 @@ button:hover {
     transform: scale(1.05);
 }
 
+@media only screen and (max-width: 1280px) {
+    .order_route-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px !important;
+    }
+
+    .order_route-id {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .order_route-address {
+        max-width: 80% !important;
+        width: 80% !important;        
+    }
+
+    .order_route-address-from,
+    .order_route-address-to {
+        width: 45% !important;
+    }
+
+    .order_route-address-top {
+        width: 65% !important;
+    }    
+}
+
 @media only screen and (max-width: 1024px) {
     .order_content-container {
         flex-direction: column;
+    }
+
+    .order_infor,
+    .order_detail {
+        max-width: unset !important;
+        width: unset !important;
     }
 
     .footer {
@@ -140,6 +173,16 @@ button:hover {
         text-align: left;
     }
 
+    .order_detail-item .order_detail-class > div {
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .order_detail-item .order_detail-class > div span {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
     .order_detail-item > div span:first-child,
     .order_detail-item > div img:first-child,
     .order_detail-item > div div:first-child {
@@ -171,6 +214,10 @@ button:hover {
     .order_detail-item > div div:first-child {
         text-align: left;
     }
+
+    .order_detail-item .order_detail-class div span {
+        text-align: right !important;
+    }
 }
 
 @media only screen and (max-width: 432px) {
@@ -180,9 +227,10 @@ button:hover {
 
     .order_detail-item > div span:first-child,
     .order_detail-item > div img:first-child,
-    .order_detail-item > div div:first-child {
-        width: unset;
-        max-width: unset;
+    .order_detail-item > div div:first-child,
+    .order_detail-item .order_detail-class div span {
+        width: unset !important;
+        /* max-width: unset !important; */
     }
 
     .banner,

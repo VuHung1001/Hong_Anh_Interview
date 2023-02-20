@@ -70,24 +70,17 @@ export default function OrderDetail(props) {
                                             variants.map((variant, index) => {
                                                 return (
                                                     <span key={index}>
-                                                        {variant}
+                                                        {variant}<br/>
                                                     </span>
                                                 );
                                             })}
                                         {variantsIsObjectWithKeys &&
-                                            Object.keys(variants).map(
-                                                (variantKey, index) => {
-                                                    return (
-                                                        <span key={index}>
-                                                            {variantKey +
-                                                                ": " +
-                                                                variants[
-                                                                    variantKey
-                                                                ]}
-                                                        </span>
-                                                    );
-                                                }
-                                            )}
+                                            Object.keys(variants).map((variantKey, index) => {
+                                                return (
+                                                    <span key={index}>{variantKey + ": " + variants[variantKey]}<br/></span>
+                                                );
+                                            }
+                                        )}
                                         {!variantsIsArrayWithElements &&
                                             !variantsIsObjectWithKeys && (
                                                 <span key={index}>
@@ -162,19 +155,12 @@ export default function OrderDetail(props) {
                                                 );
                                             })}
                                         {variantsIsObjectWithKeys &&
-                                            Object.keys(variants).map(
-                                                (variantKey, index) => {
-                                                    return (
-                                                        <span key={index}>
-                                                            {variantKey +
-                                                                ": " +
-                                                                variants[
-                                                                    variantKey
-                                                                ]}
-                                                        </span>
-                                                    );
-                                                }
-                                            )}
+                                            Object.keys(variants).map((variantKey, index) => {
+                                                return (
+                                                    <span key={index}>{variantKey + ": " + variants[variantKey]}</span>
+                                                );
+                                            }
+                                        )}
                                         {!variantsIsArrayWithElements &&
                                             !variantsIsObjectWithKeys && (
                                                 <span key={index}>

@@ -57,18 +57,10 @@ export default function OrderRoute(props) {
                                                 key={index}
                                             >
                                                 <div className="order_route-status-block-hour">
-                                                    {hours +
-                                                        ":" +
-                                                        minutes +
-                                                        ":" +
-                                                        seconds}
+                                                    {hours + ":" + minutes + ":" + seconds}
                                                 </div>
                                                 <div className="order_route-status-block-day">
-                                                    {day +
-                                                        "/" +
-                                                        month +
-                                                        "/" +
-                                                        year}
+                                                    {day + "/" + month + "/" + year}
                                                 </div>
                                             </div>
                                         );
